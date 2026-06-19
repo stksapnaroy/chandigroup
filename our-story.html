@@ -25,7 +25,7 @@
 </head>
 
 <body class="story-page">
-     <header class="main-header" aria-label="Primary navigation">
+    <header class="main-header" aria-label="Primary navigation">
         <nav class="navbar navbar-expand-xl navbar-dark">
             <div class="container-fluid px-3 px-lg-5 py-2">
                 <a class="navbar-brand brand-mark" href="index.html" aria-label="Chandi Group USA home"><img src="./image/logo.png" alt="Chandi Group USA logo" class="logo"></a>
@@ -43,6 +43,7 @@
     </li>
 
     <!-- About Us -->
+    <!-- About Us -->
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
             About Us
@@ -52,27 +53,23 @@
             <li>
                 <a class="dropdown-item" href="our-story.html">Our Story</a>
             </li>
-            <!-- <li>
-                <a class="dropdown-item" href="press-releases.html">Press Releases</a>
-            </li> -->
+
         </ul>
     </li>
 
     <!-- Development Projects -->
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+        <a class="nav-link" href="businesses.html">
            Our Businesses
         </a>
-        <ul class="dropdown-menu">
-            <li>
-                <a class="dropdown-item" href="businesses.html">New Developments</a>
-            <!-- </li>
-            <li>
-                <a class="dropdown-item" href="leasing-opportunities.html">Leasing Opportunities</a>
-            </li> -->
-        </ul>
+       
     </li>
-
+<li class="nav-item dropdown">
+        <a class="nav-link " href="projects.html" >
+          Projects & Developments
+        </a>
+       
+    </li>
     <!-- Contact -->
     <li class="nav-item">
         <a class="nav-link" href="contact.html">Contact Us</a>
@@ -80,12 +77,10 @@
 
 </ul>
 
-                    <div class="nav-actions d-flex align-items-center gap-3">
-                        <button class="search-toggle" type="button" data-bs-toggle="modal" data-bs-target="#searchModal" aria-label="Search site">
-                            <i class="bi bi-search"></i>
-                        </button>
+                    <!-- <div class="nav-actions d-flex align-items-center gap-3">
+                     
                         <a class="btn btn-gold d-none d-xl-inline-flex" href="#contact">Partner With Us</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </nav>
@@ -103,7 +98,7 @@
             </div>
         </section>
 
-        <section class="story-section story-founder">
+        <section class="story-section story-founder" id="leadership">
             <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-5" data-aos="fade-right">
@@ -418,7 +413,7 @@ We envision a future where our businesses contribute to thriving communities, su
             </div>
         </section>
 
-  <footer class="site-footer">
+ <footer class="site-footer">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
@@ -427,27 +422,27 @@ We envision a future where our businesses contribute to thriving communities, su
                 </div>
                 <div class="col-6 col-lg-2">
                     <h3>Company</h3>
-                    <a href="#about">About</a>
-                    <a href="#leadership">Leadership</a>
-                    <a href="#csr">CSR</a>
+                    <a href="our-story.html">About</a>
+                    <a href="our-story.html#leadership">Leadership</a>
+                    <a href="our-story.html">CSR</a>
                 </div>
                 <div class="col-6 col-lg-2">
                     <h3>Businesses</h3>
-                    <a href="#verticals">Real Estate</a>
-                    <a href="#verticals">Construction</a>
-                    <a href="#verticals">Investments</a>
+                    <a href="businesses.html">Real Estate</a>
+                    <a href="businesses.html#verticals">Construction</a>
+                    <a href="businesses.html#verticals">Investments</a>
                 </div>
                 <div class="col-6 col-lg-2">
                     <h3>Media</h3>
-                    <a href="#projects">Projects</a>
-                    <a href="#news">News</a>
-                    <a href="#global">Global Presence</a>
+                    <a href="project.html">Projects</a>
+                    <a href="businesses.html">Businesses</a>
+                    <a href="contact.html">Global Presence</a>
                 </div>
                 <div class="col-6 col-lg-2">
                     <h3>Connect</h3>
-                    <a href="#contact">Contact</a>
-                    <a href="mailto:info@chandigroupusa.com">Email</a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="mailto:info@chandigroupusa.com">info@chandigroupusa.com</a>
+                    <a href="tel:17603969260" target="_blank" rel="noopener">1760-396-9260</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -461,7 +456,6 @@ We envision a future where our businesses contribute to thriving communities, su
             </div>
         </div>
     </footer>
-
     <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content search-modal">

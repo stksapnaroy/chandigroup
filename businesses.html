@@ -11,7 +11,7 @@
     <meta name="author" content="Chandi Group USA" />
     <title>Chandi Group USA | Our Businesses</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />   
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -24,51 +24,62 @@
 </head>
 
 <body class="business-chapters-page">
-    <header class="main-header" aria-label="Primary navigation">
+   <header class="main-header" aria-label="Primary navigation">
         <nav class="navbar navbar-expand-xl navbar-dark">
             <div class="container-fluid px-3 px-lg-5 py-2">
-                <a class="navbar-brand brand-mark" href="index.html" aria-label="Chandi Group USA home">
-                    <img src="./image/logo.png" alt="Chandi Group USA logo" class="logo">
-                </a>
+                <a class="navbar-brand brand-mark" href="index.html" aria-label="Chandi Group USA home"><img src="./image/logo.png" alt="Chandi Group USA logo" class="logo"></a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav mx-auto align-items-xl-center gap-xl-1">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="our-story.html">Our Story</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
-                                Our Businesses
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item active" href="businesses.html">Business Chapters</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Us</a>
-                        </li>
-                    </ul>
+                   <ul class="navbar-nav mx-auto align-items-xl-center gap-xl-1">
 
-                    <div class="nav-actions d-flex align-items-center gap-3">
-                        <button class="search-toggle" type="button" data-bs-toggle="modal" data-bs-target="#searchModal"
-                            aria-label="Search site">
-                            <i class="bi bi-search"></i>
-                        </button>
+    <!-- Home -->
+    <li class="nav-item">
+        <a class="nav-link active" href="index.html">Home</a>
+    </li>
+
+    <!-- About Us -->
+    <!-- About Us -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            About Us
+        </a>
+        <ul class="dropdown-menu">
+          
+            <li>
+                <a class="dropdown-item" href="our-story.html">Our Story</a>
+            </li>
+
+        </ul>
+    </li>
+
+    <!-- Development Projects -->
+    <li class="nav-item dropdown">
+        <a class="nav-link" href="businesses.html">
+           Our Businesses
+        </a>
+       
+    </li>
+<li class="nav-item dropdown">
+        <a class="nav-link " href="project.html" >
+          Projects & Developments
+        </a>
+       
+    </li>
+    <!-- Contact -->
+    <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+    </li>
+
+</ul>
+
+                    <!-- <div class="nav-actions d-flex align-items-center gap-3">
+                     
                         <a class="btn btn-gold d-none d-xl-inline-flex" href="#contact">Partner With Us</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </nav>
@@ -188,7 +199,7 @@
             <div class="container-fluid px-0">
                 <div class="bc-split bc-split-reverse">
                     <figure class="bc-split-image" data-aos="fade-right">
-                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1900&q=86"
+                        <img src="./image/8.png"
                             alt="Premium franchise restaurant operations">
                     </figure>
                     <div class="bc-copy" data-aos="fade-left">
@@ -390,7 +401,7 @@ As we continue to expand, we remain grounded in the principles that shaped our j
                     </div>
                         <div class="col-lg-5" data-aos="fade-right">
                         <div class="story-image-frame business">
-                            <img src="./image/qsr.bmp" alt="Nachhattar Singh Chandi, founder of Chandi Group USA" />
+                            <img src="./image/7.jpg" alt="Nachhattar Singh Chandi, founder of Chandi Group USA" />
                         </div>
                     </div>
                 </div>
@@ -398,43 +409,40 @@ As we continue to expand, we remain grounded in the principles that shaped our j
         </section>
            </main>
 
-    <footer class="site-footer">
+  <footer class="site-footer">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
-                    <a class="footer-brand" href="index.html">
-                        <img src="./image/logo.png" alt="Chandi Group USA logo" class="logo">
-                    </a>
-                    <p>Premium enterprise website concept inspired by leading Indian conglomerate design language with a
-                        modern global business feel.</p>
+                    <a class="footer-brand" href="#hero"><img src="./image/logo.png" alt="Chandi Group USA logo" class="logo"></a>
+                    <p>Premium enterprise website concept inspired by leading Indian conglomerate design language with a modern global business feel.</p>
                 </div>
                 <div class="col-6 col-lg-2">
                     <h3>Company</h3>
-                    <a href="about-us.html">About</a>
-                    <a href="our-story.html">Our Story</a>
-                    <a href="#contact">Leadership</a>
+                    <a href="our-story.html">About</a>
+                    <a href="our-story.html#leadership">Leadership</a>
+                    <a href="our-story.html">CSR</a>
                 </div>
                 <div class="col-6 col-lg-2">
                     <h3>Businesses</h3>
-                    <a href="#real-estate">Real Estate</a>
-                    <a href="#contact">Construction</a>
-                    <a href="#contact">Community</a>
+                    <a href="businesses.html">Real Estate</a>
+                    <a href="businesses.html#verticals">Construction</a>
+                    <a href="businesses.html#verticals">Investments</a>
                 </div>
                 <div class="col-6 col-lg-2">
                     <h3>Media</h3>
-                    <a href="#contact">Projects</a>
-                    <a href="#contact">News</a>
-                    <a href="#contact">Global Presence</a>
+                    <a href="project.html">Projects</a>
+                    <a href="businesses.html">Businesses</a>
+                    <a href="contact.html">Global Presence</a>
                 </div>
                 <div class="col-6 col-lg-2">
                     <h3>Connect</h3>
-                    <a href="#contact">Contact</a>
-                    <a href="mailto:info@chandigroupusa.com">Email</a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="mailto:info@chandigroupusa.com">info@chandigroupusa.com</a>
+                    <a href="tel:17603969260" target="_blank" rel="noopener">1760-396-9260</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>Copyright 2026 Chandi Group USA. All rights reserved.</span>
+                <span>Copyright © 2026 Chandi Group USA. All rights reserved.</span>
                 <div class="socials">
                     <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                     <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
