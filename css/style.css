@@ -686,12 +686,13 @@ img {
 }
 
 .main-header {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 9999;
 	transition: 0.35s ease;
+	background: rgba(0, 0, 0, 1);
 }
 
 .main-header.nav-scrolled {
@@ -3122,8 +3123,22 @@ padding:80px 0;
 }
 
 .about-impact-list {
-	display: flex;
-	gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+@media (max-width: 991px) {
+    .about-impact-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .about-impact-list {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 .about-impact-list div {
@@ -6853,7 +6868,7 @@ height: 20px;
 
             .project-hero h1,
             .final-cta h2 {
-                font-size: clamp(3.2rem, 16vw, 5.8rem);
+                font-size: clamp(3.2rem, 6vw, 5.8rem);
             }
 
             .project-hero-meta {
