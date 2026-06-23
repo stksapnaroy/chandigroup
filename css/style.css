@@ -1061,7 +1061,12 @@ img {
 	height: 60px;
 	object-fit: contain;
 }
-
+.footer-brand .logo {
+	width: auto;
+	height: 60px;
+	object-fit: contain;
+    margin-top: -20px;
+}
 .info-card,
 .vertical-card,
 .team-card,
@@ -2064,7 +2069,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	gap: 16px;
 }
 
