@@ -2157,7 +2157,13 @@ img {
 	.main-header {
 		background: rgba(16, 24, 40, 0.9);
 	}
-
+.hero-copy {
+	max-width: 650px;
+	color: rgba(255, 255, 255, 0.88);
+	font-size: 1.05rem;
+	line-height: 1.2;
+	margin-top: 1.2rem;
+}
 	.navbar-collapse {
 		background: #fff;
 		padding: 18px;
