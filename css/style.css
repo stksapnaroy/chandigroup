@@ -1377,7 +1377,7 @@ img {
 }
 
 .business-card-featured i {
-	font-size: 2rem;
+	font-size: 1.7rem;
 }
 
 .business-card:nth-child(2),
@@ -2116,6 +2116,7 @@ img {
 .swiper-pagination-bullet {
 	background: rgba(16, 24, 40, 0.25);
 	opacity: 1;
+	display: none;
 }
 
 .swiper-pagination-bullet-active {
@@ -2217,7 +2218,9 @@ img {
 	padding: 4px 20px;
 	margin-top: 20px;
 }
-
+.news-copy {
+	height: 170px;
+}
 
 	.hero-content h1 {
 		max-width: 10ch;
