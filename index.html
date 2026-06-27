@@ -21,11 +21,12 @@
 <body class="intro-active">
 
     <!-- Intro Video Loader Start -->
-    <div id="introLoader" class="intro-loader">
-        <video id="introVideo" class="intro-video" muted playsinline autoplay preload="auto">
-            <source src="./image/Chandi-Group-Logo-Animation.mp4" type="video/mp4" />
-        </video>
-    </div>
+    <!-- Intro GIF Loader Start -->
+<div id="introLoader" class="intro-loader">
+    <!-- <img id="introGif" class="intro-gif" src="./image/logo.gif" alt="Loading"> -->
+       <img id="introGif" class="intro-gif" src="./image/Chandi-Group-Logo-Animation.gif" alt="Loading">
+</div>
+<!-- Intro GIF Loader End -->
     <!-- Intro Video Loader End -->
 
     <div id="siteContent" class="site-content">
@@ -675,8 +676,8 @@ Community impact through leadership.
     <script src="./js/script.js"></script>
   <script>
 document.addEventListener("DOMContentLoaded", function () {
+
     const introLoader = document.getElementById("introLoader");
-    const introVideo = document.getElementById("introVideo");
     const siteContent = document.getElementById("siteContent");
 
     if (!introLoader || !siteContent) return;
@@ -687,10 +688,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.remove("intro-active");
     }
 
-    // Mobile/tablet pe intro nahi dikhana
-    const isMobile = window.innerWidth <= 991;
-
-    if (isMobile) {
+    // 📱 Mobile devices (768px se chhoti screen) par intro skip
+    if (window.innerWidth <= 768) {
         showSite();
         return;
     }
@@ -698,40 +697,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // localStorage se counter lo
     let visitCount = parseInt(localStorage.getItem("introVisitCount")) || 0;
 
-    // Har 5th visit par video show hogi
-    let shouldShowVideo = (visitCount % 5 === 0);
+    // Har visit par GIF dikhani hai (abhi %1 hai)
+    let shouldShowGif = (visitCount % 1 === 0);
 
-    if (!shouldShowVideo) {
+    if (!shouldShowGif) {
         showSite();
         localStorage.setItem("introVisitCount", visitCount + 1);
         return;
     }
 
-    if (introVideo) {
-        introVideo.playbackRate = 1.6;
-        introVideo.currentTime = 0;
-
-        introVideo.play().catch(() => {
-            showSite();
-        });
-
-        introVideo.addEventListener("ended", function () {
-            showSite();
-            localStorage.setItem("introVisitCount", visitCount + 1);
-        });
-
-    } else {
+    // Desktop par 11 sec baad website open
+    setTimeout(() => {
         showSite();
         localStorage.setItem("introVisitCount", visitCount + 1);
-    }
+    }, 11000);
 
-    // fallback safety
-    setTimeout(() => {
-        if (!siteContent.classList.contains("show")) {
-            showSite();
-            localStorage.setItem("introVisitCount", visitCount + 1);
-        }
-    }, 7300);
 });
 </script>
 </body>

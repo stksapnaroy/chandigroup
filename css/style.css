@@ -7096,19 +7096,30 @@ left:5%;
     transition: opacity .7s ease, visibility .7s ease;
 }
 
-.intro-video{
+/* .intro-video{
     width: 100%;
     height: 100%;
-    object-fit: cover; /* full screen cover */
-}
+    object-fit: cover;
+} */
 
-/* Agar video ko full screen nahi, sirf center me logo animation ki tarah dikhana hai to ye use karo:
-.intro-video{
-    width: min(1000px, 90vw);
+/* .intro-gif{
+    width:auto;
+    height:auto;
+    object-fit:contain;
+	background: #000;
+	    object-position: center center;
+} */
+
+.intro-gif{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
     height: auto;
     object-fit: contain;
+    object-position: center;
+    margin: auto;
 }
-*/
 
 .intro-loader.hide{
     opacity: 0;
@@ -7133,3 +7144,22 @@ left:5%;
 body.intro-active{
     overflow: hidden;
 }
+
+
+@media (max-width: 768px) {
+
+    .intro-loader{
+       display: none;
+    }
+
+    .intro-gif{
+        width: 90%;
+        height: auto;
+        max-width: 400px;
+        object-fit: contain;
+        object-position: center;
+		display:none;
+    }
+
+}
+
