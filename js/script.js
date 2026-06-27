@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
       gsap.killTweensOf([heroCopy, heroMedia]);
 
       if (heroMedia) {
-        gsap.fromTo(heroMedia, { scale: 1.08, opacity: 0.92 }, { scale: 1, opacity: 1, duration: 0.9, ease: 'power2.out' });
+        gsap.fromTo(heroMedia, { opacity: 0.92 }, {  opacity: 1, duration: 0.9, ease: 'power2.out' });
       }
 
       if (heroCopy) {
